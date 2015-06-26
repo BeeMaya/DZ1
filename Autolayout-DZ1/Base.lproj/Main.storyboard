@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAk-s8-se6" userLabel="Top">
+                                <rect key="frame" x="26" y="40" width="558" height="167"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngf-3Z-BMI" userLabel="Middle1">
+                                <rect key="frame" x="26" y="227" width="179" height="167"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZe-Aw-IUW" userLabel="Middle2">
+                                <rect key="frame" x="215" y="227" width="180" height="167"/>
+                                <color key="backgroundColor" red="1" green="0.42191854010000002" blue="0.84267896620000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02F-Ia-ObB" userLabel="Middle3">
+                                <rect key="frame" x="405" y="227" width="179" height="167"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFi-eh-Ljk" userLabel="Bottom1">
+                                <rect key="frame" x="26" y="414" width="274" height="166"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKL-Fu-L4h" userLabel="Bottom2">
+                                <rect key="frame" x="310" y="414" width="274" height="166"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cKL-Fu-L4h" firstAttribute="width" secondItem="iFi-eh-Ljk" secondAttribute="width" id="4ui-Mv-Hzb"/>
+                            <constraint firstItem="BAk-s8-se6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="90Y-Xf-PLL"/>
+                            <constraint firstItem="ngf-3Z-BMI" firstAttribute="height" secondItem="iFi-eh-Ljk" secondAttribute="height" id="D63-i4-hEa"/>
+                            <constraint firstItem="dZe-Aw-IUW" firstAttribute="top" secondItem="BAk-s8-se6" secondAttribute="bottom" constant="20" id="K1J-XC-h8B"/>
+                            <constraint firstItem="ngf-3Z-BMI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="K7a-x2-JFk"/>
+                            <constraint firstItem="dZe-Aw-IUW" firstAttribute="height" secondItem="BAk-s8-se6" secondAttribute="height" constant="-1" id="Ljq-SX-qZF"/>
+                            <constraint firstItem="02F-Ia-ObB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PM7-lA-0Od"/>
+                            <constraint firstItem="cKL-Fu-L4h" firstAttribute="height" secondItem="dZe-Aw-IUW" secondAttribute="height" id="SXT-cs-M8E"/>
+                            <constraint firstItem="dZe-Aw-IUW" firstAttribute="leading" secondItem="ngf-3Z-BMI" secondAttribute="trailing" constant="10" id="T1p-IG-jJq"/>
+                            <constraint firstItem="02F-Ia-ObB" firstAttribute="top" secondItem="BAk-s8-se6" secondAttribute="bottom" constant="20" id="T2c-E8-BAE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iFi-eh-Ljk" secondAttribute="bottom" constant="20" id="Ve7-Oz-rVf"/>
+                            <constraint firstItem="02F-Ia-ObB" firstAttribute="leading" secondItem="dZe-Aw-IUW" secondAttribute="trailing" constant="10" id="XMa-Hl-EGI"/>
+                            <constraint firstItem="02F-Ia-ObB" firstAttribute="width" secondItem="dZe-Aw-IUW" secondAttribute="width" id="Xn2-U6-NnN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cKL-Fu-L4h" secondAttribute="bottom" constant="20" id="Xz8-dZ-4PZ"/>
+                            <constraint firstItem="02F-Ia-ObB" firstAttribute="height" secondItem="BAk-s8-se6" secondAttribute="height" constant="-1" id="Y5Z-K8-IvA"/>
+                            <constraint firstItem="ngf-3Z-BMI" firstAttribute="height" secondItem="BAk-s8-se6" secondAttribute="height" constant="-1" id="aKd-gI-6xU"/>
+                            <constraint firstItem="cKL-Fu-L4h" firstAttribute="leading" secondItem="iFi-eh-Ljk" secondAttribute="trailing" constant="10" id="bqF-Tg-je3"/>
+                            <constraint firstItem="iFi-eh-Ljk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ctT-6Y-ggz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BAk-s8-se6" secondAttribute="trailing" id="d37-Vt-Cqu"/>
+                            <constraint firstItem="cKL-Fu-L4h" firstAttribute="top" secondItem="dZe-Aw-IUW" secondAttribute="bottom" constant="20" id="fpf-II-WgP"/>
+                            <constraint firstItem="ngf-3Z-BMI" firstAttribute="width" secondItem="dZe-Aw-IUW" secondAttribute="width" id="gwd-YU-8tk"/>
+                            <constraint firstItem="ngf-3Z-BMI" firstAttribute="top" secondItem="BAk-s8-se6" secondAttribute="bottom" constant="20" id="i21-fC-YRb"/>
+                            <constraint firstItem="iFi-eh-Ljk" firstAttribute="top" secondItem="ngf-3Z-BMI" secondAttribute="bottom" constant="20" id="kEQ-ko-4Be"/>
+                            <constraint firstItem="cKL-Fu-L4h" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nJe-F4-TKo"/>
+                            <constraint firstItem="BAk-s8-se6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ooy-E7-9rh"/>
+                            <constraint firstItem="cKL-Fu-L4h" firstAttribute="top" secondItem="02F-Ia-ObB" secondAttribute="bottom" constant="20" id="rfn-eP-GB5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
